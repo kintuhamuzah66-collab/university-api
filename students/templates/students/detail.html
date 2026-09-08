@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{{ student.firstname }}</title>
+</head>
+
+<body>
+{% if student.profile_picture %}
+    <img src="{{ student.profile_picture.url }}" alt=" {{ student.surname }} Profile Picture"
+    width="150"
+    >
+{% else %}
+    <p>No profile picture</p>
+{% endif %}
+
+<h1>{{ student.firstname }} {{ student.surname }}</h1>
+
+<p>Email: {{ student.email }}</p>
+
+<p>Age: {{ student.age }}</p>
+
+<p>Department: {{ student.department.name }}</p>
+
+</body>
+
+</html>

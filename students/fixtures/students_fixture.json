@@ -1,0 +1,156 @@
+[
+{
+    "model": "departments.department",
+    "pk": 1,
+    "fields": {
+        "name": "Computer Science"
+    }
+},
+{
+    "model": "departments.department",
+    "pk": 2,
+    "fields": {
+        "name": "Software engineering"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 1,
+    "fields": {
+        "surname": "Kintu",
+        "firstname": "Hamza Kajegere",
+        "full_name": "Hamza Kintu",
+        "email": "kintu@gmail.com",
+        "date_of_birth": "2002-07-12",
+        "is_active": false,
+        "department": 1,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 2,
+    "fields": {
+        "surname": "Saidah",
+        "firstname": "Natasha",
+        "full_name": "",
+        "email": "saidahNatasha@gmail.com",
+        "date_of_birth": "2003-11-18",
+        "is_active": false,
+        "department": 1,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 3,
+    "fields": {
+        "surname": "Tebitta",
+        "firstname": "Mariam",
+        "full_name": null,
+        "email": "marietebitta@gmail.com",
+        "date_of_birth": "2007-09-19",
+        "is_active": false,
+        "department": 1,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 4,
+    "fields": {
+        "surname": "Wamala",
+        "firstname": "Ian Marcco",
+        "full_name": null,
+        "email": "ianmarccowamala@gmail.com",
+        "date_of_birth": "2002-12-12",
+        "is_active": true,
+        "department": 1,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 5,
+    "fields": {
+        "surname": "Nakiganda",
+        "firstname": "Safina",
+        "full_name": "Nakiganda Safina",
+        "email": "naki@gmail.com",
+        "date_of_birth": "1937-08-19",
+        "is_active": true,
+        "department": 2,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 6,
+    "fields": {
+        "surname": "hamuzah",
+        "firstname": "kintu",
+        "full_name": null,
+        "email": "kintu@university.edu",
+        "date_of_birth": "2002-07-12",
+        "is_active": true,
+        "department": 2,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 9,
+    "fields": {
+        "surname": "kulabako",
+        "firstname": "kdkd",
+        "full_name": "kdkd kulabako",
+        "email": "kint@university.edu",
+        "date_of_birth": "2003-07-12",
+        "is_active": true,
+        "department": 2,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 10,
+    "fields": {
+        "surname": "kaloolo",
+        "firstname": "kaloolo",
+        "full_name": "kaloolo kaloolo",
+        "email": "kaloolo@university.edu",
+        "date_of_birth": "2002-07-12",
+        "is_active": true,
+        "department": 1,
+        "profile_picture": "student_photos/to_be_free.png"
+    }
+},
+{
+    "model": "students.student",
+    "pk": 11,
+    "fields": {
+        "surname": "Kato",
+        "firstname": "Brian",
+        "full_name": "Brian Kato",
+        "email": "brian.kato@example.com",
+        "date_of_birth": "2003-05-15",
+        "is_active": true,
+        "department": 1,
+        "profile_picture": ""
+    }
+},
+{
+    "model": "students.student",
+    "pk": 13,
+    "fields": {
+        "surname": "Test",
+        "firstname": "User",
+        "full_name": null,
+        "email": "test@example.com",
+        "date_of_birth": "2000-01-01",
+        "is_active": true,
+        "department": 1,
+        "profile_picture": ""
+    }
+}
+]

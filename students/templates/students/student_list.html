@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link
+        rel="stylesheet"
+        href="{% static 'students/style.css' %}"
+    >
+</head>
+<body>
+    <img src="{% static 'students/images/free.png' %}" alt="university logo">
+    <h1>{{title}}</h1>
+{%if students%}
+    <table>
+        <thead>
+            <th>Surname</th>
+            <th>Firstname</th>
+            <th>Email</th>
+            <th>Department</th>
+        </thead>
+        {% for student in students %}
+        <tbody>
+            <td>{{student.surname}}</td>
+            <td>{{student.firstname}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.department}}</td>
+        </tbody>
+        {% endfor %}
+    </table>
+{%else%}
+    <p>No students found</p>
+{% endif %}
+<a href="{% url 'logout' %}">
+    <button>Logout</button>
+</a>
+<script src="{% static 'students/app.js' %}"></script>
+</body>
+</html>

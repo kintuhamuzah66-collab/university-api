@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+img {
+    width: 100%;
+}

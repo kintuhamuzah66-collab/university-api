@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link
+        rel="stylesheet"
+        href="{% static 'students/style.css' %}"
+    >
+</head>
+<body>
+
+<h1>{{title}}</h1>
+{%if students%}
+
+    <ul>
+        {% for student in students%}
+            <li><a href="{% url 'student_detail' student.id %}">
+                {{ student.firstname }} {{ student.surname }}
+            </a>
+            </li>
+            <li>Email: {{student.email}}</li>
+            <li>Department: {{student.department}}</li>
+        {% endfor %}
+        <a href="{% url 'create_student' %}">
+            <button>Add Student</button>
+        </a>
+    </ul>
+{%else%}
+    <p>No students found</p>
+{% endif %}
+<a href="{% url 'logout' %}">
+    Logout
+</a>
+</body>
+</html>

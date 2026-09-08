@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from django.http import JsonResponse
 from django.conf.urls.static import static
 #from students.api_views import student_api
 
@@ -25,7 +26,15 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView
 )
+
+def home(request):
+    return JsonResponse({
+        "message": "University API is running",
+        "status": "success"
+    })
+
 urlpatterns = [
+    path("", home, name="home"),
     path('admin/', admin.site.urls),
     path("students/", include("students.urls")),
     #path("api/students/", student_api),

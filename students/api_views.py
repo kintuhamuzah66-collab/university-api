@@ -31,7 +31,7 @@ def student_api(request):
 from rest_framework import generics, viewsets
 from students.models import Student
 from students.serializers import StudentSerializer
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly, AllowAny
 from .permissions import IsStaffOrReadOnly
 
 class StudentListCreateView(generics.ListCreateAPIView):
@@ -48,7 +48,7 @@ class StudentDetailView(generics.RetrieveUpdateDestroyAPIView):
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
 
 ###################################
